@@ -11,29 +11,4 @@ Create a bucket in your account in the region where you have access to Amazon Qu
 - IAM user with administrator access or appropriate permissions
 - AWS CLI installed and configured
 
-## Verification
 
-Run the following command to verify your AWS credentials:
-
-```bash
-aws sts get-caller-identity
-```
-
-## Expected Output
-
-You should see output similar to:
-
-```json
-{
-    "UserId": "AIDACKCEVSQ6C2EXAMPLE",
-    "Account": "123456789012",
-    "Arn": "arn:aws:iam::123456789012:user/your-username"
-}
-```
-
-## Troubleshooting
-
-If you encounter issues, ensure:
-- AWS CLI is properly installed
-- Credentials are configured correctly
-- You have network connectivity to AWS services
