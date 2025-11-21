@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Guide</title>
+    <link rel="stylesheet" href="https://unpkg.com/@cloudscape-design/global-styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: "Amazon Ember", "Helvetica Neue", Roboto, Arial, sans-serif; background: #f9f9f9; }
+        .top-nav { height: 48px; background: #232f3e; color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; box-shadow: 0 1px 1px 0 rgba(0,28,36,0.3); }
+        .top-nav-title { font-size: 16px; font-weight: 700; }
+        .top-nav-logo { height: 32px; }
+        .app-layout { display: flex; height: calc(100vh - 48px); }
+        .navigation { width: 280px; background: #fff; border-right: 1px solid #e9ebed; overflow-y: auto; }
+        .nav-header { padding: 20px; font-size: 18px; font-weight: 700; border-bottom: 1px solid #e9ebed; }
+        .nav-section { padding: 16px 20px 8px; font-size: 12px; font-weight: 700; color: #545b64; text-transform: uppercase; }
+        .nav-link { display: block; padding: 8px 20px; color: #0972d3; text-decoration: none; cursor: pointer; border-left: 2px solid transparent; }
+        .nav-link.indent { padding-left: 40px; font-size: 13px; }
+        .nav-link:hover { background: #f2f3f3; }
+        .nav-link.active { background: #f2f3f3; border-left-color: #0972d3; font-weight: 600; }
+        .content-area { flex: 1; overflow-y: auto; padding: 40px; }
+        .container { width: 100%; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 1px 1px 0 rgba(0,28,36,0.3); }
+        .container h1 { margin-top: 0; color: #000716; font-size: 28px; font-weight: 700; }
+        .container h2 { color: #000716; font-size: 20px; font-weight: 700; margin-top: 32px; }
+        .container pre { background: #f2f3f3; padding: 16px; border-radius: 4px; overflow-x: auto; }
+        .container code { background: #f2f3f3; padding: 2px 6px; border-radius: 3px; font-family: Monaco, Menlo, monospace; font-size: 13px; position: relative; }
+        .container pre code { background: none; padding: 0; }
+        .code-wrapper { position: relative; display: inline-flex; align-items: center; background: #f2f3f3; border-radius: 3px; padding: 2px 6px; gap: 8px; }
+        .code-wrapper code { background: none; padding: 0; }
+        .copy-btn { background: #0972d3; color: #fff; border: none; padding: 2px 6px; border-radius: 3px; font-size: 20px; cursor: pointer; line-height: 1; }
+        .copy-btn:hover { background: #0862c2; }
+        .container img { max-width: 100%; height: auto; display: block; margin: 20px 0; cursor: pointer; }
+        .lightbox { display: none; position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); }
+        .lightbox img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 95%; max-height: 95%; }
+        .lightbox-close { position: absolute; top: 20px; right: 40px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; }
+        .nav-buttons { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid #e9ebed; }
+        .nav-button { padding: 10px 20px; border-radius: 4px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; }
+        .nav-button:disabled { opacity: 0.5; cursor: not-allowed; }
+        .btn-previous { background: #fff; color: #ff9900; border: 1px solid #ff9900; }
+        .btn-previous:hover:not(:disabled) { background: #fff5e6; }
+        .btn-next { background: #ff9900; color: #fff; }
+        .btn-next:hover:not(:disabled) { background: #ec7211; }
+    </style>
+</head>
+<body>
+    <header class="top-nav">
+        <div class="top-nav-title" id="top-nav-title">AWS Workshop</div>
+        <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS" class="top-nav-logo">
+    </header>
+    <div class="app-layout">
+        <nav class="navigation">
+            <div class="nav-header" id="nav-title">Workshop Title</div>
+            <div id="nav-items"></div>
+        </nav>
+        <main class="content-area">
+            <div class="container" id="content">Loading...</div>
+        </main>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script>
+        const config = {
+            title: "AWS Workshop",
+            subtitle: "A Guide for Amazon Quick Suite - Automate",
+            sections: [
+                {
+                    title: "Getting Started",
+                    items: [
+                        { title: "Introduction", file: "content/introduction.md" }
+                    ]
+                },
+                {
+                    title: "Prerequisites",
+                    items: [
+                        { title: "Overview", file: "content/prerequisites.md" },
+                        { title: "Step 1: S3 & Bedrock Access Setup", file: "content/prerequisites-step1.md", indent: true },
+                        { title: "Step 2: Configure Amazon S3 connector", file: "content/prerequisites-step2.md", indent: true },
+                        { title: "Step 3: Configure Amazon Bedrock connector", file: "content/prerequisites-step3.md", indent: true }
+                    ]
+                },
+                {
+                    title: "Modules",
+                    items: [
+                        { title: "Module 1", file: "content/module1.md" },
+                        { title: "Module 2", file: "content/module2.md" }
+                    ]
+                },
+                {
+                    title: "Conclusion",
+                    items: [
+                        { title: "Cleanup", file: "content/cleanup.md" }
+                    ]
+                }
+            ]
+        };
+
+        let currentFile = null;
+
+        function renderNav() {
+            document.getElementById('top-nav-title').textContent = config.title;
+            document.getElementById('nav-title').textContent = config.subtitle;
+            const navItems = document.getElementById('nav-items');
+            let html = '';
+            
+            config.sections.forEach(section => {
+                html += `<div class="nav-section">${section.title}</div>`;
+                section.items.forEach(item => {
+                    const active = currentFile === item.file ? 'active' : '';
+                    const indent = item.indent ? 'indent' : '';
+                    html += `<a class="nav-link ${active} ${indent}" onclick="loadContent('${item.file}')">${item.title}</a>`;
+                });
+            });
+            
+            navItems.innerHTML = html;
+        }
+
+        function getAllPages() {
+            return config.sections.flatMap(s => s.items);
+        }
+
+        function openLightbox(src) {
+            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('lightbox-img').src = src;
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function getCurrentPageIndex() {
+            const pages = getAllPages();
+            return pages.findIndex(p => p.file === currentFile);
+        }
+
+        async function loadContent(file) {
+            currentFile = file;
+            renderNav();
+            
+            try {
+                const response = await fetch(file);
+                const markdown = await response.text();
+                const html = marked.parse(markdown);
+                
+                const pages = getAllPages();
+                const currentIndex = getCurrentPageIndex();
+                const hasPrevious = currentIndex > 0;
+                const hasNext = currentIndex < pages.length - 1;
+                
+                document.getElementById('content').innerHTML = html + `
+                    <div class="nav-buttons">
+                        <button class="nav-button btn-previous" onclick="navigatePrevious()" ${!hasPrevious ? 'disabled' : ''}>
+                            ← Previous
+                        </button>
+                        <button class="nav-button btn-next" onclick="navigateNext()" ${!hasNext ? 'disabled' : ''}>
+                            Next →
+                        </button>
+                    </div>
+                `;
+                
+                document.querySelectorAll('.container img').forEach(img => {
+                    img.onclick = () => openLightbox(img.src);
+                });
+                
+                document.querySelectorAll('.container p code, .container li code').forEach(code => {
+                    const wrapper = document.createElement('span');
+                    wrapper.className = 'code-wrapper';
+                    code.parentNode.insertBefore(wrapper, code);
+                    wrapper.appendChild(code);
+                    
+                    const btn = document.createElement('button');
+                    btn.className = 'copy-btn';
+                    btn.innerHTML = '⎘';
+                    btn.onclick = () => {
+                        navigator.clipboard.writeText(code.textContent);
+                        btn.innerHTML = '✓';
+                        setTimeout(() => btn.innerHTML = '⎘', 2000);
+                    };
+                    wrapper.appendChild(btn);
+                });
+            } catch (error) {
+                document.getElementById('content').innerHTML = `
+                    <h1>Content Not Found</h1>
+                    <p>Unable to load: ${file}</p>
+                    <p>Error: ${error.message}</p>
+                `;
+            }
+        }
+
+        function navigatePrevious() {
+            const pages = getAllPages();
+            const currentIndex = getCurrentPageIndex();
+            if (currentIndex > 0) {
+                loadContent(pages[currentIndex - 1].file);
+            }
+        }
+
+        function navigateNext() {
+            const pages = getAllPages();
+            const currentIndex = getCurrentPageIndex();
+            if (currentIndex < pages.length - 1) {
+                loadContent(pages[currentIndex + 1].file);
+            }
+        }
+
+        window.loadContent = loadContent;
+        window.navigatePrevious = navigatePrevious;
+        window.navigateNext = navigateNext;
+        window.openLightbox = openLightbox;
+        window.closeLightbox = closeLightbox;
+
+        renderNav();
+        loadContent(config.sections[0].items[0].file);
+    </script>
+</body>
+</html>
