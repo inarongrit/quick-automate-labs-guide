@@ -1,42 +1,31 @@
-# Step 2: Install Required Tools
+# Step 2: Configure Amazon S3 connector
 
-Install the necessary tools and software for this workshop.
+- Now that you are successfully authenticated, in the same browser go to the Amazon Quick Suite Admin Console on another page/tab using [Admin](https://us-west-2.quicksight.aws.amazon.com/sn/console/admin?wf=qbs_admin:T1#/landing)
 
-## Required Tools
+![Admin Console](images/1p-connector-admin.png)
 
-- AWS CLI version 2.x or higher
-- Python 3.8 or higher
-- Text editor or IDE
+- Go to the Permissions section in the left hand pane and go to **AWS actions**
+- On the action connectors page, click on the **New action** button in the top right to create a new action.
 
-## Installation Instructions
+![New Action Button](images/1p-connector-newaction.png)
 
-### AWS CLI
+- Select the S3 connector you want to create for this workshop.
 
-```bash
-# Check current version
-aws --version
+![S3 Connector Selection](images/1p-connector-s3.png)
 
-# Install/Update AWS CLI (Linux/macOS)
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-```
+- Fill in the details for the name and the role that you created earlier.Provide the Role ARN in the connection details. This will be the role that grants the connector permissions to perform actions on resources.
 
-### Python
+![S3 Connector Details 1](images/1p-connector-s3-details-1.png)
 
-```bash
-# Check Python version
-python3 --version
+![S3 Connector Details 2](images/1p-connector-s3-details-2.png)
 
-# Install Python (if needed)
-# Follow instructions at https://www.python.org/downloads/
-```
+- Share the connector to at least one user or group to share the connector with. Click Share to add the user to the list. Then, select either Owner or User permissions. Click the Add button.
 
-## Verification
+- Owner permissions are recommended if you are granting the connector to your own alias/user. This enables you to share, edit and delete the connector after creation.
 
-Verify all tools are installed correctly:
+![Share Connector](images/1p-connector-share.png)
 
-```bash
-aws --version
-python3 --version
-```
+- After adding the connector, you should be able to view the new connector in the list of Actions on the Amazon QuickSight Console page. Confirm the new connector is part of the list.
+
+![S3 Connector List](images/ip-connector-s3-list.png)
+
