@@ -1,35 +1,105 @@
-# Workshop Guide
+# Quick Automate Labs Guide
 
-A simple workshop guideline page built with AWS Cloudscape Design System.
+A workshop guideline page built with AWS Cloudscape Design System for Amazon Quick Suite - Quick Automate hands-on labs.
+
+## Features
+
+- 🎨 AWS Cloudscape Design System styling
+- 📱 Responsive layout that scales with screen size
+- 🖼️ Image lightbox for full-size viewing
+- 📋 Copy buttons for inline code snippets
+- 🔄 Previous/Next navigation buttons
+- 📝 Markdown-based content management
+- 🌐 Ready for AWS Amplify deployment
 
 ## Structure
 
 ```
 .
-├── index.html          # Main page with Cloudscape components
-├── content/            # Markdown content files
+├── index.html              # Main page with Cloudscape components
+├── content/                # Markdown content files
 │   ├── introduction.md
 │   ├── prerequisites.md
+│   ├── prerequisites-step1.md
+│   ├── prerequisites-step2.md
+│   ├── prerequisites-step3.md
 │   ├── module1.md
 │   ├── module2.md
 │   └── cleanup.md
+├── images/                 # Image assets
 └── README.md
 ```
 
-## Usage
+## Local Development
 
-1. Update the configuration in `index.html` (lines 28-50) to match your workshop structure
-2. Edit or add markdown files in the `content/` directory
-3. Serve the files with a local web server:
+1. Start a local web server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-4. Open http://localhost:8000 in your browser
+2. Open http://localhost:8000 in your browser
 
 ## Customization
 
-- Edit `config` object in `index.html` to add/remove sections and modules
-- Update markdown files in `content/` directory with your workshop content
-- Modify styles in the `<style>` section for custom branding
+### Update Workshop Content
+
+Edit markdown files in the `content/` directory with your workshop instructions.
+
+### Configure Navigation
+
+Update the `config` object in `index.html` (around line 54):
+
+```javascript
+const config = {
+    title: "Workshop Title",        // Top navigation bar
+    subtitle: "Workshop Subtitle",  // Sidebar header
+    sections: [
+        {
+            title: "Section Name",
+            items: [
+                { title: "Page Title", file: "content/page.md" },
+                { title: "Sub-item", file: "content/sub.md", indent: true }
+            ]
+        }
+    ]
+};
+```
+
+### Add Images
+
+1. Place images in the `images/` directory
+2. Reference in markdown: `![Description](images/your-image.jpg)`
+3. Click images to view full-size in lightbox
+
+### Markdown Features
+
+- **Bold**: `**text**`
+- **Italic**: `*text*`
+- **Code**: `` `code` `` (includes copy button)
+- **Code blocks**: ` ```language ... ``` `
+- **Links**: `[text](url)`
+- **Images**: `![alt](path)`
+- **Lists**: `- item` or `1. item`
+- **Quotes**: `> quote`
+
+## Deployment
+
+### AWS Amplify (Recommended)
+
+1. Push code to GitHub
+2. Go to AWS Amplify Console
+3. Connect your GitHub repository
+4. Deploy automatically on every push
+
+### S3 + CloudFront
+
+1. Upload files to S3 bucket
+2. Enable static website hosting
+3. Configure CloudFront distribution
+4. Set up SSL certificate
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
