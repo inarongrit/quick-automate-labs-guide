@@ -1,52 +1,26 @@
-# Step 3: Configure Your Environment
+# Step 3: Configure Amazon Bedrock connector
 
-Set up your development environment and credentials.
+- Now lets create Amazon Bedrock connector. From the same Amazon Quick Suite Admin console, On the action connectors page, click on the New action button in the top right to create a new action connector
 
-## Configuration Steps
+![New Action Button](images/1p-connector-newaction.png)
 
-### 1. Configure AWS Credentials
+- Select the 1P connector you want to create. Select Bedrock Runtime for this workshop.
 
-Run the AWS configure command:
+![Bedrock Connector Selection](images/1p-connector-bedrock.png)
 
-```bash
-aws configure
-```
+- Fill in the details for the name and the role that you created earlier.Provide the Role ARN in the connection details. This will be the role that grants the connector permissions to perform actions on resources.
 
-You'll be prompted to enter:
-- AWS Access Key ID
-- AWS Secret Access Key
-- Default region name (e.g., us-east-1)
-- Default output format (json)
+![Bedrock Connector Details 1](images/1p-connector-bedrock-details-1.png)
 
-### 2. Set Default Region
+![Bedrock Connector Details 2](images/1p-connector-bedrock-details-2.png)
 
-Ensure your default region is set appropriately for this workshop:
+- Share the connector to at least one user or group to share the connector with. Click Share to add the user to the list. Then, select either Owner or User permissions. Click the Add button.
 
-```bash
-export AWS_DEFAULT_REGION=us-east-1
-```
+- Owner permissions are recommended if you are granting the connector to your own alias/user. This enables you to share, edit and delete the connector after creation.
 
-### 3. Verify Access
+![Share Connector](images/1p-connector-share.png)
 
-Test access to required AWS services:
+- After adding the connector, you should be able to view the new connector in the list of Actions on the Amazon QuickSight Console page. Confirm the new connector is part of the list.
 
-```bash
-# Test S3 access
-aws s3 ls
+![Bedrock Connector List](images/ip-connector-bedrock-list.png)
 
-# Test IAM access
-aws iam get-user
-```
-
-## Environment Variables
-
-You may need to set additional environment variables:
-
-```bash
-export AWS_REGION=us-east-1
-export AWS_PROFILE=default
-```
-
-## Ready to Start
-
-Once you've completed all configuration steps, you're ready to begin the workshop!
