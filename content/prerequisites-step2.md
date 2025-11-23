@@ -13,7 +13,7 @@
 
 ![S3 Connector Selection](images/1p-connector-s3.png)
 
-- Fill in the details for the name and the role that you copy ARN/take note earlier. i.e, **arn:aws:iam::** *<ACCOUNT-ID>* **:role/WSParticipantRole**
+- Fill in the details for the name and the role that you copy ARN/take note earlier. i.e, **arn:aws:iam::** "<ACCOUNT-ID>" **:role/service-role/aws-quicksight-service-role-v0** 
 Provide the Role ARN in the connection details. This will be the role that grants the connector permissions to perform actions on resources.
 
 ![S3 Connector Details 1](images/1p-connector-s3-details-1.png)
