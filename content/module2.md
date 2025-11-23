@@ -97,4 +97,32 @@ Once satisfied, Click **Start testing the automation** button to see how the aut
 Click on **Start testing the automation** button to see how the automation work.
 ![Issue details](../images/issue-detai)
 
+- Once test result successfully, you can click on **Commit** button and go to next step.
+However, you can do a prior step to verify the Excel spreadsheet already in S3 Bucket that you create in early stage of this workshop.
+![Successful result](../images/test-result-success.png)
+
 ## The Final Step
+- After you click on **Commit** button, you will see the automation is successfully created and ready to use. click on **Commit** button once again.
+![Successful commit](../images/commit.png)
+
+- Now your Automate workflow is ready to deploy. Click on **Deploy** button to deploy the automation.
+![Successful deploy](../images/ready-to-deploy.png)
+
+- Click **Next**, until **Deploy** button is selected.
+![Successful deploy 2](../images/ready-to-deploy-2.png)
+
+- After wait for a few seconds, you will see the automation is deployed and ready to use.
+![Successful deploy 3](../images/ready-to-deploy-3.png)
+
+- Click on **Create trigger**, and specify the run criteria. 
+![Automate trigger](../images/automate-trigger.png)
+
+- That all you have set :) !
+
+## Wrap-up
+An automation is a visual artifact that represents the executable logic of a process. It is created using the Visual Designer within , where you define the sequence of actions, decisions, and agent interactions needed to complete a business process. Each automation serves as the operational blueprint for how work is performed, combining AI-powered agents, system actions, and human inputs in a unified flow.
+
+   - Create a project: Define the automation's scope including its name, purpose, business case, and attach process documentation.
+   - Build automation: Within the project, build and test and automation.
+   - Version and deploy: Publish automation versions for testing or production. Projects maintain version history and deployment status.
+   - Monitor and iterate: Review logs, metrics, for each run and iterate on the automation. Each iteration creates traceable - project-level change history.

@@ -16,6 +16,7 @@ Create a bucket in your account in the region where you have access to Amazon Qu
 - This is what you will get. 
 ![Create new S3 bucket](images/s3-bucket.png)
 
+## IAM Role ARN
 - Next, Navigate to the **IAM service**
 ![IAM Service](images/aws-console-iam.png)
 
@@ -24,4 +25,9 @@ Create a bucket in your account in the region where you have access to Amazon Qu
 
 - You will see the Role ARN, take note and do a copy that particular ARN
 ![IAM Role](images/iam-role-WSParticipantRole-arn.png)
+
+- Repeat the same step, do a search for **aws-quicksight-service-role-v0** IAM role.
+
+- Take a note and copy ARN for **aws-quicksight-service-role-v0** role.
+![IAM Role 2](images/iam-role-WSParticipantRole-arn-2.png)
 
