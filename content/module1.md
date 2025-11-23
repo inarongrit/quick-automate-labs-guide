@@ -2,6 +2,7 @@
 Accessing Amazon Quick Suite - Quick Automate
 
 Quick Automate is part of the Amazon Quick Suite family of AI services, which can be found across the console, CLI or IDE, among others. The Amazon Quick Suite - Quick Automate is part of the business oriented personas services in Amazon Quick Suite, where you will be able to create your own complex manual business processes and automate quick to save time and money.
+
 ---
 
 To access Quick Automate, you just need to access Amazon Quick Suite by typing it in the console search bar:
@@ -9,6 +10,7 @@ To access Quick Automate, you just need to access Amazon Quick Suite by typing i
 ![Quick Suite Access](../images/quicksuite-access.png)
 
 Or directly open in a new tab [Amazon Quick Automate](https://us-west-2.quicksight.aws.amazon.com/sn/start/home)
+
 ---
 
 Once in Amazon Quick Suite, you will be able to see new sections added:
@@ -16,6 +18,7 @@ Once in Amazon Quick Suite, you will be able to see new sections added:
 - **CONNECTIONS:** Integrations: Set up connectors against external apps to automate tasks.
 
 ![Quick Suite Landing](../images/quicksuite-landing.png)
+
 ---
 
 ## Create an Automation
@@ -52,10 +55,10 @@ Also, you can optionally add specific details regarding the workflow effort, sav
 - Finally, to create the automation workflow, click on **START BUILDING.**
 
 - A screen opens up, here you have 3 options -
--- To describe the use-case in natural language and Amazon Quick Suite - Quick Automate will build the workflow.
--- To get started with the samples and
--- To manually build the workflow.
+  - To describe the use-case in natural language and Amazon Quick Suite - Quick Automate will build the workflow.
+  - To get started with the samples and
+  - To manually build the workflow.
 
-We will build the workflow by using natural language to automate the workflow 
+We will build the workflow by using natural language to automate the workflow (with GenAI assist). 
 
-- In the next section, you will have an overview of the Workflow Studio.
+In the next section, you will have an overview of the Workflow Studio.
