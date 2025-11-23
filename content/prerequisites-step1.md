@@ -10,16 +10,18 @@ Create a bucket in your account in the region where you have access to Amazon Qu
 - Go to the AWS Management Console, Navigate to the **S3 service**
 ![S3 Service](images/aws-console-s3.png)
 
-- Click "Create bucket", Enter a unique bucket name (must be globally unique across all AWS accounts) e.g. `quick-automate-<**ACCOUNT-ID**>`. *Change ACCOUNT-ID with your AWS Account number used in this AWS Workshop*.
+- Click **"Create bucket"**, Enter a unique bucket name (must be globally unique across all AWS accounts) e.g. **quick-automate-<*ACCOUNT-ID*>**. *Change ACCOUNT-ID with your AWS Account number*.
 
-- Leave the default setting remain the same. Review all settings, Click "Create bucket" button.
+- Leave the default setting remain the same. Review all settings, Click **"Create bucket"** button.
+- This is what you will get. 
 ![Create new S3 bucket](images/s3-bucket.png)
 
 - Next, Navigate to the **IAM service**
 ![IAM Service](images/aws-console-iam.png)
 
-- Go to **Roles** under Access Management menu on the left hand side. Do a search for **WSParticipantRole** 
+- Go to **Roles** under Access Management menu on the left hand side menu. Do a search for **WSParticipantRole** IAM role. 
 ![IAM Role](images/iam-role-WSParticipantRole.png)
 
-- You will see the Role ARN, take note and do a copy the ARN
+- You will see the Role ARN, take note and do a copy that particular ARN
 ![IAM Role](images/iam-role-WSParticipantRole-arn.png)
+
