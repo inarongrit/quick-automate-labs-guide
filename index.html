@@ -145,6 +145,7 @@
         async function loadContent(file) {
             currentFile = file;
             renderNav();
+            document.querySelector('.content-area').scrollTop = 0;
             
             try {
                 const response = await fetch(file);
