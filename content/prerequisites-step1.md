@@ -10,7 +10,7 @@ Create a bucket in your account in the region where you have access to Amazon Qu
 - Go to the AWS Management Console, Navigate to the **S3 service**
 ![S3 Service](images/aws-console-s3.png)
 
-- Click **"Create bucket"**, Enter a unique bucket name (must be globally unique across all AWS accounts) e.g. **quick-automate-<*ACCOUNT-ID*>**. *Change ACCOUNT-ID with your AWS Account number*.
+- Click **"Create bucket"**, Enter a unique bucket name (must be globally unique across all AWS accounts) e.g. **quick-automate-**<*ACCOUNT-ID*>. *Change ACCOUNT-ID with your AWS Account number*.
 
 - Leave the default setting remain the same. Review all settings, Click **"Create bucket"** button.
 - This is what you will get. 

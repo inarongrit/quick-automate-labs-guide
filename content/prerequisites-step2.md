@@ -13,7 +13,7 @@
 
 ![S3 Connector Selection](images/1p-connector-s3.png)
 
-- Fill in the details for the name and the role that you copy ARN/take note earlier. i.e, **arn:aws:iam::*<ACCOUNT-ID>*:role/WSParticipantRole**
+- Fill in the details for the name and the role that you copy ARN/take note earlier. i.e, **arn:aws:iam::** *<ACCOUNT-ID>* **:role/WSParticipantRole**
 Provide the Role ARN in the connection details. This will be the role that grants the connector permissions to perform actions on resources.
 
 ![S3 Connector Details 1](images/1p-connector-s3-details-1.png)
@@ -21,7 +21,7 @@ Provide the Role ARN in the connection details. This will be the role that grant
 ![S3 Connector Details 2](images/1p-connector-s3-details-2.png)
 
 - Share the connector to at least one user or group to share the connector with. 
-Click Share to add the user to the list. *i.e, : workshop-user*
+Click Share to add the user to the list. **i.e, : workshop-user**
 Then, select either Owner or User permissions. Click the Add button.
 
 - Owner permissions are recommended if you are granting the connector to your own alias/user. This enables you to share, edit and delete the connector after creation.

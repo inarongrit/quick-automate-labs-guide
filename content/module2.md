@@ -1,9 +1,3 @@
-# Module 2: Advanced Topics
+# Module 2: Build the Workflow
+Ok, we are all set to start building a workflow automation using Amazon Quick Suite - Quick Automate!
 
-## Overview
-
-In this module, you will...
-
-## Instructions
-
-Follow these steps...
