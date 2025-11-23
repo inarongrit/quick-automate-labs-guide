@@ -17,13 +17,7 @@ This section will guide you through the necessary setup steps to prepare your en
 - **Sign in:** If you are prompted to sign in. Enter the following email: `workshop-user@example.com`
 - **Verify login** To verify you are logged into Amazon Quick Suite as the correct participant, click the user icon in the top right of the screen, and ensure you are logged in with the following username `WSParticipantRole/Participant`
 
-## Steps
-
-Next, Complete the following steps in order:
-
-1. **AWS Account Setup** - Verify your AWS account and credentials
-2. **Install Required Tools** - Install AWS CLI, Python, and other tools
-3. **Configure Your Environment** - Set up your development environment
-
+## What's next?
+You're now ready to begin the workshop!
 Use the navigation to proceed through each step.
 

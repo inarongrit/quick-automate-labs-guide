@@ -7,8 +7,12 @@ For that we need to configure the service connectors in Quick Automate. We will 
 ## Create a S3 bucket in your AWS Account
 Create a bucket in your account in the region where you have access to Amazon Quick Suite - Quick Automate. Follow the [Instructions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) in AWS documentation if need be.
 
-- Active AWS account
-- IAM user with administrator access or appropriate permissions
-- AWS CLI installed and configured
+- Go to the AWS Management Console, Navigate to the **S3 service**
+![S3 Service](images/aws-console-s3.png)
+
+- IAM user with administrator access or appropriate permissionsClick "Create bucket", Enter a unique bucket name (must be globally unique across all AWS accounts 
+
+
+- Review all settings, Click "Create bucket"
 
 
