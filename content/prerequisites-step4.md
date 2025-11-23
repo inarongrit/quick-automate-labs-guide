@@ -1,6 +1,6 @@
 # Step 4: Configure Microsoft Outlook connector (Optional)
 
-- Now lets create Microsoft Outlook connector. Go to Amazon Quick Suite Console menu, from the list under **CONNECTIONS** select **Integrations**. On the integrations page, go to **actions** tab and click on + for **Microsoft Outlook** Connector.
+- Now lets create Microsoft Outlook connector. Go to Amazon Quick Suite Console menu, from the list under **CONNECT APPS AND DATA** select **Integrations**. On the integrations page, go to **Actions** tab and click on + for **Microsoft Outlook** Connector.
 
 ![Microsoft Outlook Connector New Action](../images/1p-connector-msexchange-newaction.png)
 
