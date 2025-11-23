@@ -1,6 +1,6 @@
-# Step 1: S3 & Bedrock Access Setup
+# Step 1: S3 & IAM Access Setup
 
-For this workshop, Amazon Quick Suite - Quick Automate needs to access customer data in a customer owned Amazon S3 bucket, generate the product summary using Amazon Bedrock Service and send the product summary via email.
+For this workshop, Amazon Quick Suite - Quick Automate needs to access data in a customer owned Amazon S3 bucket, generate the product summary using Amazon Bedrock Service and send the product summary via email.
 
 For that we need to configure the service connectors in Quick Automate. We will need the following role and permissions for the Quick Automate workshop to access Amazon S3 and Amazon Bedrock services.
 
@@ -10,9 +10,16 @@ Create a bucket in your account in the region where you have access to Amazon Qu
 - Go to the AWS Management Console, Navigate to the **S3 service**
 ![S3 Service](images/aws-console-s3.png)
 
-- IAM user with administrator access or appropriate permissionsClick "Create bucket", Enter a unique bucket name (must be globally unique across all AWS accounts 
+- Click "Create bucket", Enter a unique bucket name (must be globally unique across all AWS accounts) e.g. `quick-automate-<**ACCOUNT-ID**>`. *Change ACCOUNT-ID with your AWS Account number used in this AWS Workshop*.
 
+- Leave the default setting remain the same. Review all settings, Click "Create bucket" button.
+![Create new S3 bucket](images/s3-bucket.png)
 
-- Review all settings, Click "Create bucket"
+- Next, Navigate to the **IAM service**
+![IAM Service](images/aws-console-iam.png)
 
+- Go to **Roles** under Access Management menu on the left hand side. Do a search for **WSParticipantRole** 
+![IAM Role](images/iam-role-WSParticipantRole.png)
 
+- You will see the Role ARN, take note and do a copy the ARN
+![IAM Role](images/iam-role-WSParticipantRole-arn.png)
