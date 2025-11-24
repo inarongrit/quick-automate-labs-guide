@@ -6,7 +6,10 @@ Ok, we are all set to start building a workflow automation using Amazon Quick Su
 Creating an AWS Announcements Monitoring Automation in Quick Automate.
 This automation will monitor AWS announcements weekly, extract key information, and generate formatted Excel reports stored in S3.
 
+<!-- 
 - You can ignore a step below if you continue from previous Section. 
+-->
+
 - Navigate to the Amazon Quick Suite, Quick Automate Project and Select the previous project that you just created it earlier. Click **Start Building**  
 ![Create multi-agent Workflow Automation](../images/create-multi-agent-automation.png)
 
