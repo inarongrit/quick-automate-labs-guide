@@ -16,6 +16,19 @@ Create a bucket in your account in the region where you have access to Amazon Qu
 - This is what you will get. 
 ![Create new S3 bucket](images/s3-bucket.png)
 
+## Setup Quick Suite - S3 Permission
+- In Amazon Quick Suite that you are successfully authenticated, in the same browser go to the Amazon Quick Suite Admin Console on another page/tab using [Admin](https://us-west-2.quicksight.aws.amazon.com/sn/console/admin?wf=qbs_admin:T1#/landing)
+
+![Quick Suite Resource Permission](images/quick-suite-aws-resources-permission.png)
+
+- Go to the Permissions section in the left hand pane and go to **AWS resources**
+- On the Quick Suite access to AWS services page, click on **Amazon S3** check box and choose the S3 bucket that you created earlier with **Write permission for Athena Workgroup** for write permission.
+
+![Quick Suite S3 Access](images/quick-suite-s3-access.png)
+![Quick Suite S3 Access](images/quick-suite-s3-access-2.png)
+
+- Click **Save** button to save the permission.
+
 ## IAM Role ARN
 - Next, Navigate to the **IAM service**
 ![IAM Service](images/aws-console-iam.png)
