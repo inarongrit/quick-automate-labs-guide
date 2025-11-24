@@ -114,8 +114,14 @@ However, you can do a prior step to verify the Excel spreadsheet already in S3 B
 - After wait for a few seconds, you will see the automation is deployed and ready to use.
 ![Successful deploy 3](../images/ready-to-deploy-3.png)
 
-- Click on **Create trigger**, and specify the run criteria. 
+- You can test run the automation by click on **Run** button, or click on Kebab menu and select **Run Now** or see other options.
+![Run Option](../images/run-workflow.png)
+
+- While waiting job to run, You can create the trigger to run the job by click on **Create trigger**, and specify the run criteria. 
 ![Automate trigger](../images/automate-trigger.png)
+
+- To monitor the job status you can click on **View runs** button on the right top corner. One the job is successfully run, you can see the result in the S3 bucket.
+![Automate trigger](../images/automate-run-performance.png)
 
 - That all you have set :) !
 

@@ -1,6 +1,6 @@
 # Step 1: S3 & IAM Access Setup
 
-For this workshop, Amazon Quick Suite - Quick Automate needs to access data in a customer owned Amazon S3 bucket, generate the product summary using Amazon Bedrock Service and send the product summary via email.
+For this workshop, Amazon Quick Suite - Quick Automate will extract the contents from Public Information from the specific websites, and put the content in spreadsheet format, then upload the file in a customer owned Amazon S3 bucket, generate the product summary using Amazon Bedrock Service and send the product summary via email.
 
 For that we need to configure the service connectors in Quick Automate. We will need the following role and permissions for the Quick Automate workshop to access Amazon S3 and Amazon Bedrock services.
 
