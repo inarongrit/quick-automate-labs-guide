@@ -1,6 +1,6 @@
 # Step 2: Configure Amazon S3 connector
 
-- Now in Amazon Quick Suite that you are successfully authenticated, in the same browser go to the Amazon Quick Suite Admin Console on another page/tab using [Admin](https://us-west-2.quicksight.aws.amazon.com/sn/console/admin?wf=qbs_admin:T1#/landing)
+- Now in Amazon Quick Suite that you are successfully authenticated, in the same browser go to the Amazon Quick Suite Admin Console on another page/tab using [Admin](https://us-east-1.quicksight.aws.amazon.com/sn/console/admin?wf=qbs_admin:T1#/landing)
 
 ![Admin Console](images/1p-connector-admin.png)
 

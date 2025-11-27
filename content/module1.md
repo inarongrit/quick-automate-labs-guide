@@ -9,7 +9,7 @@ To access Quick Automate, you just need to access Amazon Quick Suite by typing i
 
 ![Quick Suite Access](../images/quicksuite-access.png)
 
-Or directly open in a new tab [Amazon Quick Automate](https://us-west-2.quicksight.aws.amazon.com/sn/start/home)
+Or directly open in a new tab [Amazon Quick Automate](https://us-east-1.quicksight.aws.amazon.com/sn/start/home)
 
 ---
 
