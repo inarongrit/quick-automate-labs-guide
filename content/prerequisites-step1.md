@@ -17,7 +17,7 @@ Create a bucket in your account in the region where you have access to Amazon Qu
 ![Create new S3 bucket](images/s3-bucket.png)
 
 ## Setup Quick Suite - S3 Permission
-- In Amazon Quick Suite that you are successfully authenticated, in the same browser go to the Amazon Quick Suite Admin Console on another page/tab using [Admin](https://us-west-2.quicksight.aws.amazon.com/sn/console/admin?wf=qbs_admin:T1#/landing)
+- In Amazon Quick Suite that you are successfully authenticated, in the same browser go to the Amazon Quick Suite Admin Console on another page/tab using [Admin](https://us-east-1.quicksight.aws.amazon.com/sn/console/admin?wf=qbs_admin:T1#/landing)
 
 ![Quick Suite Resource Permission](images/quick-suite-aws-resources-permission.png)
 
