@@ -30,7 +30,7 @@ Data Processing: Structure the data with columns for:
 - Full Details/Summary
 - Announcement URL
 Output: Generate an Excel spreadsheet with formatted data
-Storage: Upload the completed Excel file to S3 bucket [quicksuite-automate-{AWS-ACCOUNT-ID}] with filename format 'AWS-Announcements.xlsx'
+Storage: Upload the completed Excel file to S3 bucket [quick-automate-{AWS-ACCOUNT-ID}] with filename format 'AWS-Announcements.xlsx'
 ```
 
 <div style="background: #e7f3ff; border-left: 4px solid #0972d3; padding: 12px; margin: 16px 0;">
